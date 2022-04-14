@@ -1,13 +1,48 @@
+@font-face {
+  font-family: "louisregular";
+  src: local("louisregular"),
+    url("./fonts/louis-cufonfonts/louisregular.otf") format("truetype");
+  font-weight: regular;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: "louisregular";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body,
+h5,
+h4,
+h3,
+h2,
+h1,
+p,
+button,
+span,
+input {
+  font-family: "louisregular";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.react-bootstrap-table > table > thead > tr > th .filter-label {
+  width: 80%;
+}
+/** Used to position the icon **/
+.Toastify__toast-icon {
+  margin-top: -100;
+}
+.Toastify__toast-body {
+  align-items: flex-start;
+}
+
+.Toastify__toast-body {
+  align-items: flex-start !important;
 }
